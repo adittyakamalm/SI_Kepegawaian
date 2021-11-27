@@ -121,27 +121,57 @@ body {
 }
 
 /* Kontak */
+.contact-info{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 60px;
+  }
+.kontak h1{
+	text-align: center;
+	margin-top: 50px;
+}
 .kontak {
-	margin-top: 100px;
+	padding-bottom: 300px;
 }
-
-.kontak2 {
+  
+  .contact-info .item{
+	width: calc(33% - 20px);
 	margin-top: 50px;
-}
-.telepon {
+	margin-left: 120px;
+	margin-right: 120px;
+	height: 160px;
+	background-color: #353b48;
+	color: #fff;
 	text-align: center;
-}
+	border-radius: 4px;
+	cursor: pointer;
+	transition: .3s linear;
+  }
+  
+  .contact-info .item:hover{
+	background-color: #48dbfb;
+  }
 
-.kontak3 {
+  footer{
+	background: url(../images/bg.jpg) no-repeat center;
+	color: #fff;
+	padding: 10px 0;
+	text-align: center;
 	margin-top: 50px;
-}
-.gmail {
-	text-align: center;
-}
+  }
+  
+  .copyright{
+	margin-bottom: 20px;
+	font-size: 15px;
+  }
+  
+  .copyright a{
+	font-size: 16px;
+	color: #48dbfb;
+	font-weight: 500;
+  }
 
-.search {
-	text-align: center;
-}
 
 /* DataPersonil */
 
@@ -180,7 +210,6 @@ body {
 .logolokasi {
 	color: white;
 	margin-top: 100px;
-	padding-bottom: 100px;
 }
 
 .visimisi {
@@ -320,12 +349,13 @@ body {
 	text-align: justify;
 }
 
+
 .gambarlogo img {
 	display: block;
-	margin-top: 150px;
+	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 700px;
+	width: 600px;
 }
 
 .arti2 {
@@ -344,18 +374,47 @@ body {
 	margin-right: auto;
 	width: 180px;
 }
+.tiang img{
+	width: 100px;
+}
+.alas img{
+	width: 220px;
+}
+.motto img{
+	width: 300px;
+}
+.arti_warna h1 {
+	text-align: center;
+	margin-bottom: 100px;
+	margin-top: 100px;
+}
+.merah img{
+	width: 200px;
+}
+.oranye img{
+	width: 200px;
+}
+.hitam img{
+	width: 200px;
+}
+.putih img{
+	width: 200px;
+}
+.emas img{
+	width: 200px;
+}
+.kuning img{
+	width: 200px;
+}
+.coklat img{
+	width: 200px;
+}
 
 /* template isi Lokasi */
 * {
 	margin: 0;
 	padding: 0;
 	font-family: "Open Sans", sans-serif;
-}
-
-.detail_lokasi h1 {
-	margin-top: 40px;
-	padding-bottom: 10px;
-	text-align: center;
 }
 
 .body1 {
@@ -375,12 +434,8 @@ body {
 	cursor: pointer;
 }
 
-.blog-posts img {
-	width: 1200px;
-}
-
 .post {
-	width: 100%;
+	width: calc(33% - 10px);
 	overflow: hidden;
 }
 
