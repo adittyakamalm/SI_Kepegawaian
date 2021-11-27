@@ -121,21 +121,21 @@ body {
 }
 
 /* Kontak */
-.contact-info{
+.contact-info {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	margin-bottom: 60px;
-  }
-.kontak h1{
+}
+.kontak h1 {
 	text-align: center;
 	margin-top: 50px;
 }
 .kontak {
 	padding-bottom: 300px;
 }
-  
-  .contact-info .item{
+
+.contact-info .item {
 	width: calc(33% - 20px);
 	margin-top: 50px;
 	margin-left: 120px;
@@ -146,32 +146,31 @@ body {
 	text-align: center;
 	border-radius: 4px;
 	cursor: pointer;
-	transition: .3s linear;
-  }
-  
-  .contact-info .item:hover{
-	background-color: #48dbfb;
-  }
+	transition: 0.3s linear;
+}
 
-  footer{
+.contact-info .item:hover {
+	background-color: #48dbfb;
+}
+
+footer {
 	background: url(../images/bg.jpg) no-repeat center;
 	color: #fff;
 	padding: 10px 0;
 	text-align: center;
 	margin-top: 50px;
-  }
-  
-  .copyright{
+}
+
+.copyright {
 	margin-bottom: 20px;
 	font-size: 15px;
-  }
-  
-  .copyright a{
+}
+
+.copyright a {
 	font-size: 16px;
 	color: #48dbfb;
 	font-weight: 500;
-  }
-
+}
 
 /* DataPersonil */
 
@@ -349,7 +348,6 @@ body {
 	text-align: justify;
 }
 
-
 .gambarlogo img {
 	display: block;
 	margin-top: 50px;
@@ -374,13 +372,13 @@ body {
 	margin-right: auto;
 	width: 180px;
 }
-.tiang img{
+.tiang img {
 	width: 100px;
 }
-.alas img{
+.alas img {
 	width: 220px;
 }
-.motto img{
+.motto img {
 	width: 300px;
 }
 .arti_warna h1 {
@@ -388,25 +386,25 @@ body {
 	margin-bottom: 100px;
 	margin-top: 100px;
 }
-.merah img{
+.merah img {
 	width: 200px;
 }
-.oranye img{
+.oranye img {
 	width: 200px;
 }
-.hitam img{
+.hitam img {
 	width: 200px;
 }
-.putih img{
+.putih img {
 	width: 200px;
 }
-.emas img{
+.emas img {
 	width: 200px;
 }
-.kuning img{
+.kuning img {
 	width: 200px;
 }
-.coklat img{
+.coklat img {
 	width: 200px;
 }
 
