@@ -8,5 +8,6 @@ class Lokasi extends CI_Controller {
 		$this->load->view('template/header');
 		$this->load->view('template/navbar');
 		$this->load->view('lokasi');
+		$this->load->view('template/footer');
 	}
 }

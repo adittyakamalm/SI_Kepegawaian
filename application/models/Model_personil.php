@@ -8,10 +8,6 @@ class Model_personil extends CI_Model {
         return $this->db->get('struktur')->result_array();
     }
 
-    public function get_carousel(){
-        return $this->db->get('carousel')->result_array();
-    }
-
     public function get_keyword($cari){
         $this->db->select('*');
         $this->db->from('data_personel');

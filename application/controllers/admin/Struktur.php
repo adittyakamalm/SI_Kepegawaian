@@ -27,8 +27,7 @@ class Struktur extends CI_Controller {
 	{
 		$data = [
 			'pageTitle' => "UniHealth | Tabel Catering",
-			'struktur' => $this->Model_personil->get_struktur(),
-			'carousel' => $this->Model_personil->get_carousel()
+			'struktur' => $this->Model_personil->get_struktur()
 		];
 
 		$this->load->view('template_admin/navbar');
@@ -57,30 +56,7 @@ class Struktur extends CI_Controller {
 		);
 
 		$this->Model_personil->upload_gambar($data, 'struktur');
-		redirect('admin/struktur/upStruktur');
-	}
-
-	public function uploadCarousel(){
-		$gambar_carousel	=	$_FILES['gambar_carousel']['name'];
-		if ($gambar_carousel =''){}else{
-			$config ['upload_path'] 		= './uploads/carousel';
-			$config ['allowed_types'] 		= 'jpg|jpeg|png|svg';
-			$config['overwrite'] 			= TRUE;
-			
-			$this->load->library('upload', $config);
-			if(!$this->upload->do_upload('gambar_carousel')){
-				echo "Gambar gagal diupload !";
-			}else{
-				$gambar_carousel	=	$this->upload->data('file_name');
-			}
-		}
-
-		$data = array(
-			'gambar' => $gambar_carousel
-		);
-
-		$this->Model_personil->upload_gambar($data, 'carousel');
-		redirect('admin/struktur/upStruktur');
+		redirect('admin/struktur');
 	}
 
 	public function update(){
@@ -112,12 +88,6 @@ class Struktur extends CI_Controller {
 	public function hapus($id){
 		$where 	= array('id' => $id);
 		$this->Model_personil->hapus_data($where, 'struktur');
-		redirect('admin/upStruktur');
-	}
-
-	public function hapusCarousel($id){
-		$where 	= array('id' => $id);
-		$this->Model_personil->hapus_data($where, 'carousel');
 		redirect('admin/upStruktur');
 	}
 		
