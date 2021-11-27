@@ -1,0 +1,477 @@
+/* Header */
+/* .headers-wrap {
+	background: linear-gradient(
+			0deg,
+			rgba(255, 255, 255, 0.7),
+			rgba(253, 253, 253, 0.7)
+		),
+		url("../images/gerbang.jpg") no-repeat center;
+
+.lemdikpol img {
+	margin-top: 50px;
+	margin-left: 650px;
+	width: 150px;
+	height: 150px;
+}
+
+.polda {
+	padding-bottom: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.polda img {
+	margin-top: 0px;
+	margin-left: 80px;
+	width: 150px;
+	height: 150px;
+}
+
+.spn img {
+	margin-bottom: 170px;
+	margin-left: 1020px;
+	width: 150px;
+	height: 150px;
+}
+} */
+
+/* Login */
+
+.logologin {
+	width: 250px;
+}
+
+/* Navbar */
+.navbar {
+	background: linear-gradient(0deg, rgb(54, 57, 62), rgba(54, 57, 62, 255));
+	letter-spacing: 1px;
+}
+
+.nav-link {
+	color: white !important;
+	font-weight: 400;
+}
+
+/* Background */
+body {
+	background: linear-gradient(
+			0deg,
+			rgba(255, 255, 255, 0.7),
+			rgba(253, 253, 253, 0.7)
+		),
+		url("../images/lambang.jpg") no-repeat center;
+}
+
+/* Home Page */
+
+.banner {
+	padding-top: 10vh;
+	height: 90vh;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+		url("../images/banner.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.carousel {
+	margin: 100px;
+	width: 1300px;
+}
+
+.carousel-contain {
+	background: linear-gradient(
+			0deg,
+			rgba(255, 255, 255, 0.7),
+			rgba(253, 253, 253, 0.7)
+		),
+		url("/images/lambang.jpg") no-repeat center;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+	left: 0;
+	z-index: 1;
+}
+
+.bordered {
+	border: solid white;
+}
+
+.definisi {
+	text-align: justify;
+	padding-bottom: 200px;
+}
+.definisi h1 {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+/* Struktur */
+.struktur input {
+	width: 100%;
+}
+
+.struktur img {
+	width: 100%;
+}
+
+.modalimg img {
+	width: 400px;
+}
+
+/* Kontak */
+.kontak {
+	margin-top: 100px;
+}
+
+.kontak2 {
+	margin-top: 50px;
+}
+.telepon {
+	text-align: center;
+}
+
+.kontak3 {
+	margin-top: 50px;
+}
+.gmail {
+	text-align: center;
+}
+
+.search {
+	text-align: center;
+}
+
+/* DataPersonil */
+
+.search img {
+	width: 250px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.btn {
+	background-color: #000000;
+	color: white;
+}
+
+.btn:hover {
+	background-color: aliceblue;
+	color: black;
+}
+
+/* Detail */
+.detail {
+	margin-top: 30px;
+}
+.detail img {
+	margin-left: 70px;
+	width: 300px;
+	height: 300px;
+}
+
+/* Profil */
+.visisejarah {
+	margin-top: 100px;
+}
+
+.logolokasi {
+	color: white;
+	margin-top: 100px;
+	padding-bottom: 100px;
+}
+
+.visimisi {
+	width: 400px;
+	height: 250px;
+	border: none;
+	border-radius: 4px;
+	background-color: rgb(255, 0, 68);
+	color: white;
+	box-shadow: inset 0 0 0 0 #f9e506;
+	transition: ease-out 0.3s;
+	font-size: 2rem;
+	outline: none;
+}
+
+.visimisi:hover {
+	box-shadow: inset 400px 0 0 0 #f9e506;
+	cursor: pointer;
+	color: #000000;
+}
+
+.sejarah {
+	width: 400px;
+	height: 250px;
+	border: none;
+	border-radius: 4px;
+	background-color: #f9e506;
+	color: #000000;
+	box-shadow: inset 0 0 0 0 rgb(255, 0, 68);
+	transition: ease-out 0.3s;
+	font-size: 2rem;
+	outline: none;
+}
+
+.sejarah:hover {
+	box-shadow: inset 400px 0 0 0 rgb(255, 0, 68);
+	cursor: pointer;
+	color: white;
+}
+
+.logo {
+	width: 400px;
+	height: 250px;
+	border: none;
+	border-radius: 4px;
+	background-color: rgb(88, 53, 243);
+	color: #000000;
+	box-shadow: inset 0 0 0 0 #000000;
+	transition: ease-out 0.3s;
+	font-size: 2rem;
+	outline: none;
+}
+
+.logo:hover {
+	box-shadow: inset 400px 0 0 0 #000000;
+	cursor: pointer;
+	color: white;
+}
+
+.lokasi {
+	width: 400px;
+	height: 250px;
+	border: none;
+	border-radius: 4px;
+	background-color: #000000;
+	color: white;
+	box-shadow: inset 0 0 0 0 rgb(88, 53, 243);
+	transition: ease-out 0.3s;
+	font-size: 2rem;
+	outline: none;
+}
+
+.lokasi:hover {
+	box-shadow: inset 400px 0 0 0 rgb(88, 53, 243);
+	cursor: pointer;
+	color: #000000;
+}
+
+/* template isi visi misi */
+.visi_misi h1 {
+	margin-top: 50px;
+	text-align: center;
+}
+.visi {
+	margin-left: 30px;
+	margin-top: 70px;
+	text-align: justify;
+}
+
+.visi img {
+	width: 700px;
+}
+
+.misi {
+	margin-left: 30px;
+	margin-top: 100px;
+	text-align: justify;
+}
+
+.misi img {
+	width: 700px;
+	margin-top: 350px;
+}
+
+/* template isi sejarah */
+.gambarsejarah img {
+	width: 500px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.gambarsejarah {
+	margin-top: 20px;
+	text-align: center;
+}
+.detailsejarah {
+	text-align: justify;
+	font-weight: bold;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+.footer {
+	margin-top: 50px;
+	text-align: center;
+}
+
+/* template isi arti logo */
+.arti_logo h1 {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.arti {
+	margin-left: 30px;
+	margin-top: 70px;
+	text-align: justify;
+}
+
+.gambarlogo img {
+	display: block;
+	margin-top: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+}
+
+.arti2 {
+	margin-left: 30px;
+	margin-top: 100px;
+	text-align: justify;
+}
+
+.arti2 a {
+	font-weight: bold;
+}
+
+.arti2 img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 180px;
+}
+
+/* template isi Lokasi */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", sans-serif;
+}
+
+.detail_lokasi h1 {
+	margin-top: 40px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.body1 {
+	background-color: rgb(250, 250, 250);
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.blog-posts {
+	width: min(1200px, 100%);
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	cursor: pointer;
+}
+
+.blog-posts img {
+	width: 1200px;
+}
+
+.post {
+	width: 100%;
+	overflow: hidden;
+}
+
+.post-img {
+	width: 100%;
+	transition: 0.3s linear;
+}
+
+.post-content {
+	background-color: #ffffffdd;
+	margin: 0 20px;
+	padding: 30px;
+	border-radius: 6px;
+	transform: translateY(-60px);
+	transition: 0.3s linear;
+}
+
+.post-content h3 {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.date {
+	font-size: 15px;
+	font-style: italic;
+	color: #e77f67;
+}
+
+.post:hover .post-img {
+	transform: translateY(20px);
+}
+
+.post:hover .post-content {
+	transform: translateY(-80px);
+}
+
+@media screen and (max-width: 1500px) {
+	.blog-posts {
+		justify-content: center;
+	}
+	.post {
+		width: min(600px, 100%);
+	}
+}
+
+/* Admin */
+
+.dataTable {
+	margin-left: 100px;
+	margin-top: 50px;
+}
+
+.btna1 {
+	width: 45px;
+}
+
+.btna2 {
+	width: 45px;
+}
+
+.sidenav img {
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-right: 30px;
+	width: 150px;
+}
+
+/* Edit Data */
+
+.edit {
+	margin-top: 70px;
+	padding-bottom: 50px;
+}
+
+.edit img {
+	margin-left: 70px;
+	width: 300px;
+	height: 300px;
+}
+
+.back {
+	float: right;
+	margin-right: 10px;
+}
+
+.simpan {
+	margin-right: 10px;
+	float: right;
+}
+
+/* Upload Struktur  */
+.upStruktur {
+	margin-top: 100px;
+}
