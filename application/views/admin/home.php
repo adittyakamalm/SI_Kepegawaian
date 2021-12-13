@@ -1,3 +1,4 @@
+<?php if ($this->session->userdata('username')) { ?>
 <title><?= $pageTitle ?></title>
 <div class="card shadow mb-4">
   <div class="card-header py-3">
@@ -88,6 +89,15 @@
   </div>
 </div>
             
+<?php } else { ?>
+    <div class="container mt-5">
+      <div class="alert alert-danger" role="alert">
+        <p class="text-center">
+          Anda harus login terlebih dahulu!
+        </p>
+      </div>
+    </div>
+  <?php } ?>
             
             
             

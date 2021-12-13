@@ -45,12 +45,6 @@ class Home extends CI_Controller {
 	}
 
 	public function edit($id){
-		// $data['personil'] = $this->Model_personil->detail_personil($id);
-		// $this->load->view('template_admin/header');
-		// $this->load->view('template_admin/navbar');
-		// $this->load->view('admin/edit',$data);
-		// $this->load->view('template_admin/footer');
-
 		$where = array('id' => $id);
 		$data['personil'] = $this->Model_personil->edit_personil($where, 'data_personel')->result();
 		$this->load->view('template_admin/header');
@@ -66,13 +60,29 @@ class Home extends CI_Controller {
 		$pangkat	= $this->input->post('pangkat');
 		$jabatan	= $this->input->post('jabatan');
 		$riwayat	= $this->input->post('riwayat');
+		$gambar		= $_FILES['gambar']['name'];
+
+		if ($gambar =''){}else{
+			$config ['upload_path'] 		= './uploads/profile';
+			$config ['allowed_types'] 		= 'jpg|jpeg|png|svg|gif';
+			$config ['max_size'] 			= '3072';
+			$config ['overwrite'] 			= TRUE;
+			
+			$this->load->library('upload', $config);
+			if(!$this->upload->do_upload('gambar')){
+				echo "Gambar gagal diupload !";
+			}else{
+				$gambar	=	$this->upload->data('file_name');
+			}
+		}
 
 		$data = array(
 			'NAMA'				=> $nama,
 			'NRP_NIP'			=> $nip,
 			'PANGKAT'			=> $pangkat,
 			'JABATAN'			=> $jabatan,
-			'Riwayat_Jabatan'	=> $riwayat
+			'Riwayat_Jabatan'	=> $riwayat,
+			'gambar'			=> $gambar
 		);
 
 		$where = array(

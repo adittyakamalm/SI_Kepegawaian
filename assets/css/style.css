@@ -1,41 +1,3 @@
-/* Header */
-/* .headers-wrap {
-	background: linear-gradient(
-			0deg,
-			rgba(255, 255, 255, 0.7),
-			rgba(253, 253, 253, 0.7)
-		),
-		url("../images/gerbang.jpg") no-repeat center;
-
-.lemdikpol img {
-	margin-top: 50px;
-	margin-left: 650px;
-	width: 150px;
-	height: 150px;
-}
-
-.polda {
-	padding-bottom: 200px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.polda img {
-	margin-top: 0px;
-	margin-left: 80px;
-	width: 150px;
-	height: 150px;
-}
-
-.spn img {
-	margin-bottom: 170px;
-	margin-left: 1020px;
-	width: 150px;
-	height: 150px;
-}
-} */
-
 /* Login */
 
 .logologin {
@@ -79,19 +41,8 @@ body {
 	width: 1300px;
 }
 
-.carousel-contain {
-	background: linear-gradient(
-			0deg,
-			rgba(255, 255, 255, 0.7),
-			rgba(253, 253, 253, 0.7)
-		),
-		url("/images/lambang.jpg") no-repeat center;
-}
-
-.carousel-control.left,
-.carousel-control.right {
-	left: 0;
-	z-index: 1;
+.carousel-item img {
+	width: 1300px;
 }
 
 .bordered {
@@ -99,6 +50,7 @@ body {
 }
 
 .definisi {
+	margin-top: 50px;
 	text-align: justify;
 	padding-bottom: 200px;
 }
@@ -510,6 +462,7 @@ footer {
 
 .edit img {
 	margin-left: 70px;
+	margin-bottom: 30px;
 	width: 300px;
 	height: 300px;
 }
@@ -524,7 +477,8 @@ footer {
 	float: right;
 }
 
-/* Upload Struktur  */
-.upStruktur {
+/* Uploads  */
+.uploads {
 	margin-top: 100px;
+	margin-bottom: 100px;
 }

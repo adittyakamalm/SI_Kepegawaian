@@ -22,10 +22,7 @@
                     <a class="nav-link mx-2" href="<?= base_url('profil'); ?>">Profil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-2" href="<?= base_url('admin/auth'); ?>">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mx-2" href="<?= base_url('admin/home'); ?>">Admin</a>
+                    <a class="nav-link mx-2" href="<?= base_url('auth'); ?>">Login</a>
                 </li>
             </ul>
         </div>

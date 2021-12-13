@@ -1,17 +1,17 @@
-<body>
-
-<div id="carousel" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="<?= base_url('assets/images/zoom.jpg'); ?>" class="d-block w-100" alt="...">
+      <img src="<?= base_url('assets/images/selamatdatang.jpg'); ?>" class="d-block w-100" alt="...">
     </div>
+    <?php $no=1; foreach($carousel as $crs) : ?>
     <div class="carousel-item">
-      <img src="<?= base_url('assets/images/zoom1.jpg'); ?>" class="d-block w-100" alt="...">
+    <img src="./uploads/carousel/<?php echo $crs['gambar']; ?>" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5><?php echo $crs['judul']; ?></h5>
+        <p><?php echo $crs['keterangan']; ?></p>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="<?= base_url('assets/images/zoom2.jpg'); ?>" class="d-block w-100" alt="...">
-    </div>
-  </div>
+    <?php endforeach; ?>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
@@ -24,17 +24,15 @@
 
 <div class="container">
 <div class="definisi">
-  <h1> DEFINISI </h1>
-  <a> 2 Januari 1952 dengan Surat Keputusan Menteri Kepolisian Nomor : 1 / MK /
+  <h1> SPN POLDA JABAR </h1>
+  <p>   2 Januari 1952 dengan Surat Keputusan Menteri Kepolisian Nomor : 1 / MK /
     I / 1952 Tanggal 2 Januari 1952, Lahirlah sebuah Lembaga Pendidikan Polri untuk
     Daerah Jawa Barat yang terletak di Jalan Otto Iskandardinata No. 640 sebelah selatan
     Kota Bandung tepatnya wilayah Tegalega dengan nama Sekolah Polisi Negara
     Tegalega. Lokasi pendidikan ini dengan adanya pengembangan Pembangunan
     Kotamadya Bandung berada di jantung pusat kota Bandung namun sebelumnya
-    adalah bagian selatan Bandung. </a>
-  <br>
-  <br>
-  <a> SPN Tegalega ini semasa berdirinya belum mempunyai lokasi / kantor yang
+    adalah bagian selatan Bandung. </p>
+  <p> SPN Tegalega ini semasa berdirinya belum mempunyai lokasi / kantor yang
     menjulang tinggi seperti kantor-kantor yang menjamur sekarang ini melainkan
     menurut sejarah ternyata mempunyai tempat yang dulunya adalah pendidikan
     peninggalan Belanda (MOSVIA = Tempat mendidik para calon Amtenar / Pegawai
@@ -44,9 +42,10 @@
     peninggalan Belanda yang dibangun oleh penjajahan Belanda dengan areal 11 Ha,
     namun karena pengembangan kota / pengambilalihan wilayah tersebut kurang
     termonitor dengan baik, maka yang ada sekarang ini hanya ± 4,5 Ha saja.
+  </p>
+    </div>
 </div>
 </div>
-</body>
 
 
 

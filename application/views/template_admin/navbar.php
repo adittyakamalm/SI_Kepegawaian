@@ -11,7 +11,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="<?= base_url('admin/auth'); ?>">Logout</a></li>
+                        <li><a class="dropdown-item" href="<?= base_url('auth/logout'); ?>">Logout</a></li>
                     </ul>
                 </li>
             </ul>
@@ -33,7 +33,7 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Struktur
                             </a>
-                            <a class="nav-link" href="<?= base_url('admin/struktur/upStruktur'); ?>">
+                            <a class="nav-link" href="<?= base_url('admin/uploads'); ?>">
                                 <div class="sb-nav-link-icon"><i class="fas fa-upload"></i></div>
                                 Upload
                             </a>
