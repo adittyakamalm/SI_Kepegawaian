@@ -15,8 +15,6 @@
         </a>
         <div class="col-1"></div>
   </div> 
-  
-
 </div>
 
 <div class="logolokasi">
@@ -35,6 +33,19 @@
       </div>
       </a>
       <div class="col-1"></div>
+</div> 
+</div>
+
+
+<div class="prasarana">
+  <div class="container">
+  <div class="row">
+    <div class="col-4"></div>
+      <div class="col-4">
+      <a class="profile-link" href="<?= base_url('prasarana'); ?>">
+      <button class="sarana"> Sarana <br> Prasarana</button>
+        </a>
+      </div>
 </div> 
 </div>
 

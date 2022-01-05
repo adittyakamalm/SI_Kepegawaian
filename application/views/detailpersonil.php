@@ -7,7 +7,7 @@
     <?php foreach($personil as $psn): ?>
     <div class="row">
         <div class="col-md-4">
-          <img src="<?= base_url('assets/images/profil.png'); ?>">
+          <img src="/cisarua/uploads/profile/<?php echo $psn->gambar; ?>">
         </div>
         <div class="col-md-8">
         <table class="table">
@@ -26,10 +26,6 @@
               <tr>
                 <td>Jabatan </td>
                 <td><strong><?php echo $psn->JABATAN; ?></strong></td>
-              <tr>
-              <tr>
-                <td>Riwayat Jabatan </td>
-                <td><strong></strong></td>
               <tr>
             </table>
         </div>

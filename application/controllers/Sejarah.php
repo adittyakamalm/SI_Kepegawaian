@@ -5,8 +5,14 @@ class Sejarah extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('template/header');
+		$data = [
+			'pageTitle' => "SPN | Sejarah"
+		];
+
+		$this->load->view('template/header', $data);
 		$this->load->view('template/navbar');
-		$this->load->view('sejarah');
+		$this->load->view('sejarah', $data);
+		$this->load->view('template/footer');
 	}
 }
+

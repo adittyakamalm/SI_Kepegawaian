@@ -8,7 +8,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <link rel="icon" type="image/png" href="../assets/images/spn.png">
-        <title>Halaman Admin SPN</title>
+        <title><?= $pageTitle ?></title>
 
         <link href="<?= base_url('assets/');?>css/styles.css" rel="stylesheet" >
 

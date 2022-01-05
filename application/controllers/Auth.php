@@ -11,7 +11,7 @@ class Auth extends CI_Controller {
      public function index() {
 
         $data = [
-            'pageTitle' => 'UniHealth | Login',
+            'pageTitle' => 'SPN | Login',
             'user' => $this->user_model->getUserLoginData()
         ];
 
@@ -66,7 +66,7 @@ class Auth extends CI_Controller {
     // Register process method
     public function register() {
         $data = [
-            'pageTitle' => 'UniHealth | Register',
+            'pageTitle' => 'SPN | Register',
             'user' => $this->user_model->getUserLoginData()
         ];
 

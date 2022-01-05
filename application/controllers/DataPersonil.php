@@ -30,11 +30,14 @@ class DataPersonil extends CI_Controller {
 		
 		//initialize
 		$this->pagination->initialize($config);
+		$data = [
+			'pageTitle' => "SPN | Data Personil"
+		];
 		
 		$data['start'] =$this->uri->segment(3);
 		$data['personil'] = $this->Model_personil->get_personel($config['per_page'], $data['start'], $data['keyword']);
 
-		$this->load->view('template/header');
+		$this->load->view('template/header', $data);
 		$this->load->view('template/navbar');
 		$this->load->view('datapersonil', $data);
 		$this->load->view('template/footer');

@@ -13,11 +13,11 @@ class Home extends CI_Controller {
 	public function index()
 	{
 		$data = [
-			'pageTitle' => "UniHealth | Tabel Catering",
+			'pageTitle' => "Admin | Dashboard",
 			'personil' => $this->Model_personil->get_data()
 		];
 
-		$this->load->view('template_admin/header');
+		$this->load->view('template_admin/header', $data);
 		$this->load->view('template_admin/navbar');
 		$this->load->view('admin/home',$data);
 		$this->load->view('template_admin/footer');

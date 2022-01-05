@@ -11,12 +11,13 @@ class Kontak extends CI_Controller {
 	public function index()
 	{
 		$data = [
+			'pageTitle' => "SPN | Kontak",
 			'personil'	=>  $this->Model_personil->get_data()
 		];
-
-		$this->load->view('template/header');
+		
+		$this->load->view('template/header', $data);
 		$this->load->view('template/navbar');
-		$this->load->view('kontak');
+		$this->load->view('kontak', $data);
 		$this->load->view('template/footer');
 		
 	}

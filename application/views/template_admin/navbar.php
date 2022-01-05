@@ -26,16 +26,29 @@
                         </div>            
                             <div class="sb-sidenav-menu-heading">Manajemen</div>
                             <a class="nav-link" href="<?= base_url('admin/home'); ?>">
-                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            <div class="sb-nav-link-icon"><i class="fas fa-user-friends"></i></div>
                                 Personil 
                             </a>
                             <a class="nav-link" href="<?= base_url('admin/struktur'); ?>">
-                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-sitemap"></i></div>
                                 Struktur
                             </a>
-                            <a class="nav-link" href="<?= base_url('admin/uploads'); ?>">
+                            <a class="nav-link" href="<?= base_url('admin/sejarah'); ?>">
+                                <div class="sb-nav-link-icon"><i class="fas fa-monument"></i></div>
+                                 Sejarah
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Upload</div>
+                            <a class="nav-link" href="<?= base_url('admin/upstruktur'); ?>">
                                 <div class="sb-nav-link-icon"><i class="fas fa-upload"></i></div>
-                                Upload
+                                Struktur
+                            </a>
+                            <a class="nav-link" href="<?= base_url('admin/uphome'); ?>">
+                                <div class="sb-nav-link-icon"><i class="fas fa-upload"></i></div>
+                                Home
+                            </a>
+                            <a class="nav-link" href="<?= base_url('admin/upprasarana'); ?>">
+                                <div class="sb-nav-link-icon"><i class="fas fa-upload"></i></div>
+                                Prasarana
                             </a>
                         </div>
                     </div>

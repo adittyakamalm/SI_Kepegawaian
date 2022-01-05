@@ -13,11 +13,11 @@ class Struktur extends CI_Controller {
 	public function index()
 	{
 		$data = [
-			'pageTitle' => "UniHealth | Tabel Catering",
+			'pageTitle' => "Admin | Struktur",
 			'struktur' => $this->Struktur_model->get_struktur()
 		];
 
-		$this->load->view('template_admin/navbar');
+		$this->load->view('template_admin/navbar', $data);
 		$this->load->view('template_admin/header');
 		$this->load->view('admin/struktur', $data);
 		$this->load->view('template_admin/footer');

@@ -5,9 +5,12 @@ class Arti_Logo extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('template/header');
+		$data = [
+			'pageTitle' => "SPN | Arti Logo"
+		];
+		$this->load->view('template/header', $data);
 		$this->load->view('template/navbar');
-		$this->load->view('arti_logo');
+		$this->load->view('arti_logo', $data);
 		$this->load->view('template/footer');
 	}
 }
